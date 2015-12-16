@@ -1,3 +1,10 @@
+postgresql-metrics (0.2.3) unstable; urgency=low
+
+  * fix division by zero errors
+  * fix commenting out all metrics of single type
+
+ -- Hannu Varjoranta <hannu.varjoranta@iki.fi>  Wed, 16 Dec 2015 10:19:22 +0000
+
 postgresql-metrics (0.2.2) unstable; urgency=low
 
   * fix bug in replication delay metric

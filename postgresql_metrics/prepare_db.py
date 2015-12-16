@@ -131,8 +131,8 @@ RETURN QUERY(SELECT * FROM pg_catalog.pg_stat_replication);
 END$$ LANGUAGE plpgsql SECURITY DEFINER;"""
     with db_connection.cursor() as c:
         c.execute(sql)
-        c.execute("CREATE VIEW " + REPLICATION_STATS_VIEW
-                  + " AS SELECT * FROM public.pg_stat_repl()")
+        c.execute("CREATE VIEW {} AS SELECT * FROM public.pg_stat_repl()"
+                  .format(REPLICATION_STATS_VIEW)
 
 
 def create_pgstattuples_extension(db_connection):
