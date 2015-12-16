@@ -16,7 +16,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 # parse_requirements() returns generator of pip.req.InstallRequirement objects
-install_requirements = parse_requirements('requirements.txt')
+install_requirements = parse_requirements('requirements.txt', session=False)
 
 # requirements below is a list of requirements:
 #   e.g. ['psycopg2==2.6.1', 'logbook==0.10.1']
